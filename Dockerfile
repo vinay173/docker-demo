@@ -1,5 +1,6 @@
 FROM node:4.6
-WORKDIR /app
+RUN mkdir -p /app/vinay
+WORKDIR /app/vinay
 ADD . /app
 RUN npm install
 EXPOSE 3000
